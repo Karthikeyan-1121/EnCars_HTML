@@ -1297,8 +1297,8 @@ select {
 }
 
 .mega-menu .menu-links>li>a {
-  /*line-height: 102px*/
-  ;
+  /*line-height: 102px
+  ;*/
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
@@ -5509,7 +5509,7 @@ footer .copyright ul li a:hover {
         Inner intro
 **************************************/
 .inner-intro {
-  height: 410px;
+  height: 210px;
   display: block;
 }
 

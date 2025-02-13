@@ -52,3 +52,18 @@ input[type=number] {
     scale: 1.05;
     transition: all .5ms ease-in-out;
 }
+
+.car-details .details-nav ul,
+.car-details .details-nav li {
+    width: 100% !important;
+}
+
+.details-nav ul li a {
+    border-color: #0E9448;
+    background: #0E9448;
+    color: #ffffff;
+}
+
+.details-nav ul li a:hover {
+    scale: 1.05;
+}

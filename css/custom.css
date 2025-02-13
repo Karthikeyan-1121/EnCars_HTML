@@ -1,0 +1,54 @@
+* {
+    transition: all 50ms ease-in-out 0;
+}
+
+.feature-car .star,
+.car-list,
+.car-overlay-banner {
+    display: none;
+}
+
+.contact-details h6 {
+    text-transform: unset;
+}
+
+.contact-details .contact-info-item h6:hover {
+    text-decoration: underline;
+}
+
+h6 a:hover {
+    color: White !important;
+}
+
+.form-group .select-styled {
+    background: #f6f6f6 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.contact-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-details h5 {
+    text-align: start;
+}
+
+.car-item:hover .car-image .img-fluid {
+    scale: 1.05;
+    transition: all .5ms ease-in-out;
+}

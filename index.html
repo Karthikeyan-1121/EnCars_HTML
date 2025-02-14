@@ -38,6 +38,9 @@
   <!-- main style -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+  <!-- popup style -->
+  <link rel="stylesheet" type="text/css" href="css/popup.css" />
+
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="css/custom.css" />
 
@@ -615,7 +618,7 @@
               <p>Let us know what’s on your mind – whether you’re looking for a specific model, budget range,
                 or car features. Fill out the form below, and our team will get back to you with the best options.</p>
             </div>
-            <form method="post" action="#">
+            <form method="post" action="javascript:void(0)">
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <input id="contactform_name" type="text" placeholder="Name*" class="form-control placeholder"
@@ -770,34 +773,30 @@
                 </div>
 
                 <div class="col-md-12">
-                  <button id="submit" name="submit" type="submit" value="Send" class="button w-100">Send
+                  <button id="submit" name="submit" type="submit" value="Send" class="button button--success w-100"
+                    data-for="js_success-popup">Send
                     message</button>
                 </div>
               </div>
             </form>
-          </div>
 
-        </div>
-
-        <div class="col-xl-4 col-lg-5 col-md-6 d-none">
-          <div class="contact-details">
-            <h5 class="text-white mb-4">Contact Details</h5>
-            <div class="contact-information">
-              <div class="contact-info-item">
-                <p>5/792, NC Colony, Veppadai, Elanthakutai Post, Komarapalayam TK, Pallipalayam, Namakkal - 638008 </p>
-              </div>
-              <div class="contact-info-item">
-                <span>Send email</span>
-                <h6 class="text-white"><a href="mailto:info@encars.in">info@encars.in</a></h6>
-              </div>
-              <div class="contact-info-item">
-                <span>Call anytime</span>
-                <h6 class="text-white"> <a href="tel:7502244550">(+91) 75022 44550</a></h6>
+            <div class="popup popup--icon -success js_success-popup">
+              <div class="popup__background"></div>
+              <div class="popup__content">
+                <h3 class="popup__content__title">
+                  Submitted Successfully
+                  </h1>
+                  <p>Our Team will contact you soon</p>
+                  <p>
+                    <button class="button button--success" data-for="js_success-popup">Back to Home</button>
+                  </p>
               </div>
             </div>
 
           </div>
+
         </div>
+
       </div>
     </div>
   </section>
@@ -872,7 +871,7 @@
           </div>
           <div class="col-lg-6 col-md-12">
             <ul class="list-inline text-lg-end text-center">
-              <li><a href="#">privacy policy </a> | </li>
+              <li><a href="privacy-policy.html">privacy policy </a> | </li>
               <li><a href="#">terms and conditions </a></li>
             </ul>
           </div>
@@ -998,6 +997,19 @@
         }
       });
     })(jQuery);
+
+  </script>
+  <script>
+    const addButtonTrigger = (el) => {
+      el.addEventListener("click", () => {
+        const popupEl = document.querySelector(`.${el.dataset.for}`);
+        popupEl.classList.toggle("popup--visible");
+      });
+    };
+
+    Array.from(document.querySelectorAll("button[data-for]")).forEach(
+      addButtonTrigger
+    );
 
   </script>
 

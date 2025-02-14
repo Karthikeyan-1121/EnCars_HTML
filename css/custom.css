@@ -8,17 +8,14 @@
     display: none;
 }
 
-.contact-details h6 {
-    text-transform: unset;
-}
-
-.contact-details .contact-info-item h6:hover {
+.contact-box:hover p {
     text-decoration: underline;
 }
 
-h6 a:hover {
-    color: White !important;
+.contact-box a {
+    color: #999999;
 }
+
 
 .form-group .select-styled {
     background: #f6f6f6 !important;
@@ -66,4 +63,26 @@ input[type=number] {
 
 .details-nav ul li a:hover {
     scale: 1.05;
+}
+
+
+/* About us icon hover */
+.feature-box:hover i svg path {
+    fill: white;
+    transition: all .10s;
+}
+
+/* ===== Contact Form ====== */
+/* radil btn */
+#Contact .form-check-input {
+    margin-top: 11px;
+}
+
+#Contact .form-group label {
+    font-size: 16px;
+    text-transform: unset;
+}
+
+#Contact .price-slide-2 .price input {
+    margin-top: 0;
 }

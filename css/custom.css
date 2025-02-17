@@ -86,3 +86,14 @@ input[type=number] {
 #Contact .price-slide-2 .price input {
     margin-top: 0;
 }
+
+/* TnC */
+.tnc a {
+    color: unset;
+    text-decoration: underline;
+}
+
+.tnc a:hover {
+    color: #0E9448;
+    text-decoration: underline !important;
+}

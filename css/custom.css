@@ -97,3 +97,15 @@ input[type=number] {
     color: #0E9448;
     text-decoration: underline !important;
 }
+
+
+/* Home: Guidelines */
+.sourceBio h6 {
+    text-transform: inherit;
+    margin-top: 0px !important;
+}
+
+.sourceBio .feature-box-3 {
+    display: flex;
+    align-items: flex-start;
+}

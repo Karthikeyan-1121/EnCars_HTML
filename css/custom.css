@@ -105,7 +105,139 @@ input[type=number] {
     margin-top: 0px !important;
 }
 
+.sourceBio .feature-box h6:before {
+    display: none;
+}
+
+.sourceBio .feature-box {
+    height: 100%;
+}
+
 .sourceBio .feature-box-3 {
     display: flex;
     align-items: flex-start;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:997px) {
+    .sourceBio .feature-box-3 {
+        width: 90%;
+
+    }
+}
+
+/* Benefits with Finance ul li*/
+.benefits ul li,
+.financeComparission ul li {
+    list-style: none;
+}
+
+.BenefitsCard h5 {
+    color: #0E9448;
+    margin-bottom: 20px;
+}
+
+.BenefitsCard {
+    padding: 40px;
+    background-color: rgb(248, 250, 248);
+    border-radius: 10px;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: all 100ms ease-in-out;
+}
+
+.BenefitsCard:hover {
+    border-color: #e6e6e6;
+    transition: all 100ms ease-in-out;
+    background-color: white;
+}
+
+.benefits ul li p,
+.financeComparission ul li p {
+    display: block;
+}
+
+.benefits li :first-child,
+.financeComparission li :first-child {
+    margin-bottom: 0;
+    color: #151615;
+}
+
+/* Finance */
+.financeComparission h2 {
+    text-transform: unset;
+}
+
+.financeComparission h2 span {
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.planCard {
+    padding: 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.planCard h6 {
+    text-transform: unset;
+}
+
+.financeComparission li :last-child {
+    margin-bottom: 0;
+    color: #151615;
+}
+
+.financePlans {
+    border: 1px solid lightgrey;
+    /* margin-top: 20px; */
+    height: 95%;
+    transition: all 500ms ease-out;
+    border-radius: 10px;
+}
+
+/* .financePlans:hover, */
+.financeComparission .activePlan {
+    background-color: #015f2a;
+    border: 1px solid transparent;
+    color: #e6e6e6;
+    scale: 1.01;
+    transition: all 500ms ease-in-out;
+    border-radius: 12px;
+}
+
+/* .financePlans:hover h6,
+.financePlans:hover li p,
+.financePlans:hover li p strong {
+    color: #f6f6f6;
+    transition: all 500ms ease-in-out;
+} */
+
+.financeComparission .activePlan h6,
+.financeComparission .activePlan li p,
+.financeComparission .activePlan li p strong {
+    color: #f6f6f6;
+    transition: all 500ms ease-in-out;
+}
+
+.financeComparission .section-title {
+    margin-bottom: 30px;
+}
+
+/* USP */
+.USP .main-title {
+    text-transform: unset;
+}
+
+.USP .vectorImg {
+    width: 100%;
+}
+
+.USP .vectorImg svg {
+    max-height: 90vh;
+}
+
+.USP h6 {
+    text-transform: unset;
 }

@@ -234,10 +234,45 @@ input[type=number] {
     width: 100%;
 }
 
-.USP .vectorImg svg {
-    max-height: 90vh;
+.USP .vectorImg img {
+    max-height: 70vh;
 }
 
 .USP h6 {
     text-transform: unset;
+}
+
+/* Core value */
+.feature-box img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sourceBio .feature-box:hover i {
+    background-color: unset;
+    scale: 1.05;
+}
+
+.sourceBio .feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sourceBio .feature-box i {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sourceBio .feature-box i img {
+    scale: .75;
+}
+
+/* Footer */
+.footer .contact img {
+    max-width: 80vw;
+    min-height: 50px;
 }

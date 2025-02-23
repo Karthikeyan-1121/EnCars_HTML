@@ -276,3 +276,15 @@ input[type=number] {
     max-width: 80vw;
     min-height: 50px;
 }
+
+/* Brands */
+.brandIco {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.brandIco img {
+    width: 100%;
+}

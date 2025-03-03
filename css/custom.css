@@ -67,9 +67,8 @@ input[type=number] {
 
 
 /* About us icon hover */
-.feature-box:hover i svg path {
-    fill: white;
-    transition: all .10s;
+.welcome-block {
+    padding-bottom: 50px;
 }
 
 /* ===== Contact Form ====== */
@@ -116,14 +115,14 @@ input[type=number] {
 .sourceBio .feature-box-3 {
     display: flex;
     align-items: flex-start;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 @media screen and (max-width:997px) {
     .sourceBio .feature-box-3 {
-        width: 90%;
+        width: 100%;
 
     }
 }
@@ -230,16 +229,31 @@ input[type=number] {
     text-transform: unset;
 }
 
-.USP .vectorImg {
-    width: 100%;
-}
-
-.USP .vectorImg img {
-    max-height: 70vh;
-}
-
 .USP h6 {
     text-transform: unset;
+}
+
+.uspCard {
+    text-align: center;
+    padding: 30px 25px 20px 25px;
+    /*  border: 1px solid rgb(227, 225, 225);
+    border-radius: 10px; */
+    height: 100%;
+    transition: all .1s ease-in-out;
+}
+
+.uspCard:hover img {
+    filter: brightness(.5);
+    scale: 1.05;
+    transition: all .1s ease-in-out;
+}
+
+.uspCard p {
+    margin-bottom: unset;
+}
+
+.uspCard img {
+    margin-bottom: 10px;
 }
 
 /* Core value */
@@ -261,6 +275,7 @@ input[type=number] {
 }
 
 .sourceBio .feature-box i {
+    display: none !important;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -271,6 +286,22 @@ input[type=number] {
     scale: .75;
 }
 
+.sourceBio .feature-box-3 {
+    padding: 30px 25px 20px 25px;
+    border: 1px solid rgb(227, 225, 225);
+    border-radius: 10px;
+    height: 100%;
+    transition: all .1s ease-in-out;
+}
+
+.sourceBio .feature-box-3:hover {
+    padding: 25px 25px 25px 25px;
+    transition: all .1s ease-in-out;
+    border-color: transparent;
+    box-shadow: -1px 0px 15px 0px rgba(106, 181, 87, 0.15);
+
+}
+
 /* Footer */
 .footer .contact img {
     max-width: 80vw;
@@ -279,7 +310,7 @@ input[type=number] {
 
 /* Brands */
 .brandIco {
-    max-width: 150px;
+    max-width: 100px;
     max-height: 150px;
     margin-top: 30px;
     padding: 5px;
@@ -287,4 +318,20 @@ input[type=number] {
 
 .brandIco img {
     width: 100%;
+}
+
+/* checkbox */
+.details-nav .modal-dialog .form-check.form-check-inline .form-check-input:checked,
+.form-check-input:checked {
+    margin-top: 10px;
+}
+
+.form-check-input {
+    margin-top: 10px;
+}
+
+/* Nav-Active on scroll */
+.menu-list-items .active {
+    color: #2dbccb !important;
+    text-decoration: underline;
 }

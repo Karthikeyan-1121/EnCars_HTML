@@ -239,13 +239,13 @@ input[type=number] {
     /*  border: 1px solid rgb(227, 225, 225);
     border-radius: 10px; */
     height: 100%;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .uspCard:hover img {
     filter: brightness(.5);
     scale: 1.05;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .uspCard p {
@@ -288,18 +288,17 @@ input[type=number] {
 
 .sourceBio .feature-box-3 {
     padding: 30px 25px 20px 25px;
-    border: 1px solid rgb(227, 225, 225);
+    border: 1px solid #d9f3e5;
     border-radius: 10px;
     height: 100%;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #f7fffb;
 }
 
 .sourceBio .feature-box-3:hover {
     padding: 25px 25px 25px 25px;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     border-color: transparent;
-    box-shadow: -1px 0px 15px 0px rgba(106, 181, 87, 0.15);
-
 }
 
 /* Footer */

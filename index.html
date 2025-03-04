@@ -1005,7 +1005,7 @@ USP -->
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
                       checked="">
                     <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault2">
-                      Need expert suggestions
+                      Let the experts guide me
                     </label>
                   </div>
                 </div>
@@ -1125,14 +1125,32 @@ USP -->
                 </div>
 
                 <div class="col-md-12">
-                  <button id="submit" name="submit" type="submit" value="Send" class="button button--success w-100"
+                  <!-- <button id="submit" name="submit" type="submit" value="Send" class="button button--success w-100"
                     data-for="js_success-popup">Send
-                    message</button>
+                    message</button> -->
+
+                  <button id="submit" name="submit" type="submit" value="Send" class="button button--error w-100"
+                    data-for="js_error-popup">Send message
+                  </button>
+
                 </div>
               </div>
             </form>
 
-            <div class="popup popup--icon -success js_success-popup">
+            <div class="popup popup--icon -error js_error-popup">
+              <div class="popup__background"></div>
+              <div class="popup__content">
+                <h3 class="popup__content__title">
+                  Error Occured
+                  </h1>
+                  <p>Retry after few minutes</p>
+                  <p>
+                    <button class="button button--error" data-for="js_error-popup">Back to Home</button>
+                  </p>
+              </div>
+            </div>
+
+            <!-- <div class="popup popup--icon -success js_success-popup">
               <div class="popup__background"></div>
               <div class="popup__content">
                 <h3 class="popup__content__title">
@@ -1143,7 +1161,7 @@ USP -->
                     <button class="button button--success" data-for="js_success-popup">Back to Home</button>
                   </p>
               </div>
-            </div>
+            </div> -->
 
           </div>
 

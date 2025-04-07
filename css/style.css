@@ -6633,7 +6633,7 @@ label:after {
         Product listing
 **************************************/
 .product-listing .car-item {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .product-listing .listing-sidebar .widget {

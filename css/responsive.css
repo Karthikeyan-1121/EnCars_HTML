@@ -1,12 +1,3 @@
-/*
-Template: Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template
-Author: potenzaglobalsolutions.com
-Design and Developed by: potenzaglobalsolutions.com
-
-
-*/
-
-
 /*****************
 ================================================
  (  Media Queries  )
@@ -565,9 +556,9 @@ Design and Developed by: potenzaglobalsolutions.com
     padding: 0px;
   }
 
-  .feature-box {
+  /* .feature-box {
     margin-bottom: 30px;
-  }
+  } */
 
   .welcome-block .halp-call {
     margin-top: 30px;

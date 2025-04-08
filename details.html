@@ -96,7 +96,7 @@
                   </li>
 
                   <li>
-                    <a href="index.html#OurCars">Our Cars</a>
+                    <a href="car-listing-grid.html">Our Cars</a>
                   </li>
 
                   <li>
@@ -159,10 +159,111 @@
         </div>
       </div>
 
+      <div class="row car-details">
+        <div class="col-md-12">
+          <div class="details-nav">
+            <ul>
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa fa-tag"></i>I'm Intrested, Request More Info
+                </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Request More Info</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="rmi_notice" class="form-notice" style="display:none;"></div>
+                        <p class="sub-title">Please fill out the information below and one of our representatives will
+                          contact you regarding your more information request. </p>
+                        <form class="gray-form reset_css" id="rmi_form" action="#">
+                          <input type="hidden" name="action" value="request_more_info" />
+                          <div class="alrt">
+                            <span class="alrt"></span>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Name*</label>
+                            <input type="text" class="form-control" name="rmi_name" id="rmi_name" />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label pe-3">Gendar :</label>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault1">
+                                Male
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault2" checked>
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault2">
+                                Female
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault3" checked>
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault3">
+                                Other
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Contact Number*</label>
+                            <input type="text" class="form-control" id="rmi_phone" name="rmi_phone">
+                          </div>
+
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="text" class="form-control" name="rmi_email" id="rmi_email" />
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="Brands">City</label>
+                            <select class="form-control" type="drop-down" id="FormControlSelect1">
+                              <option value="0">Select</option>
+                              <option value="1">Brand 01</option>
+                              <option value="2">Brand 02</option>
+                              <option value="3">Brand 03</option>
+                              <option value="4">Brand 04</option>
+                              <option value="5">Brand 05</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" name="rmi_message" rows="4" id="rmi_message"></textarea>
+                          </div>
+
+                          <div class="mb-3">
+                            <div id="recaptcha1"></div>
+                          </div>
+                          <div>
+                            <a class="button red" id="request_more_info_submit">Submit <i
+                                class="fa fa-spinner fa-spin fa-fw btn-loader" style="display: none;"></i></a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="con_img">
+          <div class="con_img position-relative">
             <img src="/images/detail/inova-crysta/Innova-Crysta-cover.webp" alt="">
+            <div class="badge-area">
+              <img src="images/detail/icons/availability/booked.svg" alt="#">
+            </div>
           </div>
         </div>
       </div>
@@ -252,7 +353,10 @@
                 <a href="#">Engine</a>
               </li>
               <li>
-                <a href="#">dents</a>
+                <a href="#">Defects</a>
+              </li>
+              <li>
+                <a href="#">Extras</a>
               </li>
             </ul>
 
@@ -294,7 +398,7 @@
 
   <!-- Car Additional Details Starts -->
 
-  <section class="page-section-pb">
+  <section class="additional-detail">
     <div class="container">
 
       <div class="row">
@@ -394,7 +498,7 @@
             <div class="tyre-fl">
               <div class="position-relative">
                 <img src="images/detail/icons/tyre/tyre-good.svg" alt="">
-                <div class="tyre-fl-content position-absolute text-end">
+                <div class="tyre-fl-content position-absolute text-lg-center">
                   <div class="content-indicator d-flex flex-column align-items-end">
                     <div>
                       <p><strong>Left</strong></p>
@@ -437,7 +541,7 @@
                   <div class="content-indicator d-flex flex-column align-items-end">
                     <div>
                       <p><strong>Right</strong></p>
-                      <p class="tyre-value">85%</p>
+                      <p class="tyre-value tc-good">85%</p>
                     </div>
                   </div>
                 </div>
@@ -450,57 +554,13 @@
                   <div class="content-indicator d-flex flex-column align-items-center">
                     <div>
                       <p><strong>Spare</strong></p>
-                      <p class="tyre-value">85%</p>
+                      <p class="tyre-value tc-good">85%</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="condition-content-wrap d-none">
-              <div class="content-indicator">
-                <div class="tyre-fl-content">
-                  <div class="d-flex flex-column align-items-end">
-                    <div>
-                      <p><strong>Left</strong></p>
-                      <p class="tyre-value">90%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tyre-fr-content">
-                  <div class="d-flex flex-column align-items-end">
-                    <div>
-                      <p><strong>Right</strong></p>
-                      <p class="tyre-value">60%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tyre-rl-content">
-                  <div class="d-flex flex-column align-items-end">
-                    <div>
-                      <p><strong>Left</strong></p>
-                      <p class="tyre-value">30%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tyre-rr-content">
-                  <div class="d-flex flex-column align-items-end">
-                    <div>
-                      <p><strong>Right</strong></p>
-                      <p class="tyre-value">85%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tyre-sp-content">
-                  <div class="d-flex flex-column align-items-end">
-                    <div>
-                      <p><strong>Right</strong></p>
-                      <p class="tyre-value">99%</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -555,6 +615,111 @@
       </div>
     </div>
   </section>
+
+
+  <!-- I'm intrested sec starts -->
+  <section class="intrested-btn-fix">
+    <div class="container">
+      <div class="row car-details text-center">
+        <div class="col-md-12">
+          <div class="details-nav w-100">
+            <ul>
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa fa-tag"></i>I'm Intrested, Request More Info
+                </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Request More Info</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="rmi_notice" class="form-notice" style="display:none;"></div>
+                        <p class="sub-title">Please fill out the information below and one of our representatives will
+                          contact you regarding your more information request. </p>
+                        <form class="gray-form reset_css" id="rmi_form" action="#">
+                          <input type="hidden" name="action" value="request_more_info" />
+                          <div class="alrt">
+                            <span class="alrt"></span>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Name*</label>
+                            <input type="text" class="form-control" name="rmi_name" id="rmi_name" />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label pe-3">Gendar :</label>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault1">
+                                Male
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault2" checked>
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault2">
+                                Female
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault3" checked>
+                              <label class="form-check-label p-0 text-uppercase" for="flexRadioDefault3">
+                                Other
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Contact Number*</label>
+                            <input type="text" class="form-control" id="rmi_phone" name="rmi_phone">
+                          </div>
+
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="text" class="form-control" name="rmi_email" id="rmi_email" />
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="Brands">City</label>
+                            <select class="form-control" type="drop-down" id="FormControlSelect1">
+                              <option value="0">Select</option>
+                              <option value="1">Brand 01</option>
+                              <option value="2">Brand 02</option>
+                              <option value="3">Brand 03</option>
+                              <option value="4">Brand 04</option>
+                              <option value="5">Brand 05</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" name="rmi_message" rows="4" id="rmi_message"></textarea>
+                          </div>
+
+                          <div class="mb-3">
+                            <div id="recaptcha1"></div>
+                          </div>
+                          <div>
+                            <a class="button red" id="request_more_info_submit">Submit <i
+                                class="fa fa-spinner fa-spin fa-fw btn-loader" style="display: none;"></i></a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- I'm intrested sec ends -->
   <hr class="mt-5">
 
   <!-- Car Additional Details Ends -->

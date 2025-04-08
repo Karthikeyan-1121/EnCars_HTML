@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="We make buying and selling used cars simple, transparent, and trustworthy." />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>EnCars</title>
+  <title>EnCars - Available Cars</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/EnCars_Fav.png" />
@@ -44,6 +44,9 @@
 
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+  <!-- listing colors styles -->
+  <link rel="stylesheet" type="text/css" href="css/color-listing.css" />
 
   <!-- responsive -->
   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
@@ -153,7 +156,7 @@ product-listing  -->
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-4">
-          <div class="listing-sidebar mb-4">
+          <div class="listing-sidebar">
             <div class="widget">
               <div class="widget-search">
                 <h5 class="mb-0">Advanced Filter</h5>
@@ -510,119 +513,71 @@ product-listing  -->
                     </ul>
                   </li>
                   <li class="list-group-item">
-                    <a href="#">Exterior Color</a>
-                    <ul>
+                    <a href="#" class="current">Color</a>
+                    <ul class="car-color" style="display: block;">
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck38" required>
-                          <label class="form-check-label" for="invalidCheck38">
-                            Ruby Red Metallic
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck39" required>
-                          <label class="form-check-label" for="invalidCheck39">
-                            Racing Yellow
-                          </label>
-                        </div>
+                        <input id='colorRedMaroon' name='colors' type='checkbox'>
+                        <label for='colorRedMaroon' title='Red-Maroon'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck40" required>
-                          <label class="form-check-label" for="invalidCheck40">
-                            Guards Red
-                          </label>
-                        </div>
+                        <input id='colorOrange' name='colors' type='checkbox'>
+                        <label for='colorOrange' title='Orange'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck41" required>
-                          <label class="form-check-label" for="invalidCheck41">
-                            Aqua Blue Metallic
-                          </label>
-                        </div>
+                        <input id='colorYellowGolden' name='colors' type='checkbox'>
+                        <label for='colorYellowGolden' title='Yellow-Golden'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck42" required>
-                          <label class="form-check-label" for="invalidCheck42">
-                            White
-                          </label>
-                        </div>
+                        <input id='colorGreen' name='colors' type='checkbox'>
+                        <label for='colorGreen' title='Green'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck43" required>
-                          <label class="form-check-label" for="invalidCheck43">
-                            Dark Blue Metallic
-                          </label>
-                        </div>
-                      </li>
-
-                    </ul>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#">Interior Color</a>
-                    <ul>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck44" required>
-                          <label class="form-check-label" for="invalidCheck44">
-                            Platinum Grey
-                          </label>
-                        </div>
+                        <input id='colorBlue' name='colors' type='checkbox'>
+                        <label for='colorBlue' title='Blue'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck45" required>
-                          <label class="form-check-label" for="invalidCheck45">
-                            Agate Grey
-                          </label>
-                        </div>
+                        <input id='colorBlack' name='colors' type='checkbox'>
+                        <label for='colorBlack' title='Black'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck46" required>
-                          <label class="form-check-label" for="invalidCheck46">
-                            Marsala Red
-                          </label>
-                        </div>
+                        <input id='colorSilverGray' name='colors' type='checkbox'>
+                        <label for='colorSilverGray' title='Silver-Gray'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck47" required>
-                          <label class="form-check-label" for="invalidCheck47">
-                            Alcantara Black
-                          </label>
-                        </div>
+                        <input id='colorWhite' name='colors' type='checkbox'>
+                        <label for='colorWhite' title='White'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
                       <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck48" required>
-                          <label class="form-check-label" for="invalidCheck48">
-                            Black
-                          </label>
-                        </div>
+                        <input id='colorBeigeBronzeBrown' name='colors' type='checkbox'>
+                        <label for='colorBeigeBronzeBrown' title='Beige-Bronze-Brown'>
+                          <a href='#'> </a>
+                        </label>
                       </li>
 
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck49" required>
-                          <label class="form-check-label" for="invalidCheck49">
-                            Luxor Beige
-                          </label>
-                        </div>
-                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -648,16 +603,16 @@ product-listing  -->
             <div class="row sorting-options">
               <div class="col-lg-5">
                 <div class="shortOpt d-flex align-items-center h-100">
-                  <div class="change-view-button d-flex align-items-center">
+                  <h6 class="m-0 pe-3">100 <span>Results Found</span></h6>
+                  <div class="change-view-button d-flex align-items-center d-none">
                     <h6 class="m-0 pe-3">View</h6>
                     <a class="active" href="#"> <i class="fa fa-th"></i> </a>
                     <a class="ms-2" href="#"><i class="fa fa-list-ul"></i></a>
                   </div>
                 </div>
-
               </div>
-              <div class="col-lg-3 text-end p-0">
-                <div class="selected-box">
+              <div class="col-lg-3 text-end">
+                <div class="selected-box d-none">
                   <select>
                     <option>Show Results</option>
                     <option>5 </option>
@@ -666,7 +621,7 @@ product-listing  -->
                   </select>
                 </div>
               </div>
-              <div class="col-lg-4 text-end p-0">
+              <div class="col-lg-4 text-end">
                 <div class="selected-box">
                   <select>
                     <option>Sort by </option>
@@ -683,13 +638,13 @@ product-listing  -->
             <div class="col-lg-4 col-sm-6">
               <div class="car-item">
                 <div class="car-image">
-                  <a href="details.html">
+                  <a href="details.html" target="_blank">
                     <img src="images/detail/inova-crysta/Innova-Crysta-cover.webp" alt="">
                   </a>
                 </div>
                 <div class="car-content">
                   <div class="model-n-variation">
-                    <a href="details.html">2024 Innova Crysta <span>Z 2.4</span></a>
+                    <a href="details.html" target="_blank">2024 Innova Crysta <span>Z 2.4</span></a>
                   </div>
                   <div class="info-min-wrap">
                     <p class="info-min">5400 km</p>
@@ -700,6 +655,9 @@ product-listing  -->
                   <div class="price">
                     <span class="new-price">₹25,75,000 </span>
                     <span class="old-price">₹28,95,990</span>
+                  </div>
+                  <div class="badge-area">
+                    <img src="images/detail/icons/availability/booked.svg" alt="#">
                   </div>
                 </div>
               </div>

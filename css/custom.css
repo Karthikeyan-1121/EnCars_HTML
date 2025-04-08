@@ -52,9 +52,13 @@ input[type=number] {
     transition: all .5ms ease-in-out;
 }
 
-.car-details .details-nav ul,
+/* .car-details .details-nav ul,
 .car-details .details-nav li {
     width: 100% !important;
+} */
+
+.details-nav {
+    margin: 0px;
 }
 
 .details-nav ul li a {
@@ -64,7 +68,7 @@ input[type=number] {
 }
 
 .details-nav ul li a:hover {
-    scale: 1.05;
+    scale: 1.01;
 }
 
 
@@ -126,6 +130,28 @@ input[type=number] {
     .sourceBio .feature-box-3 {
         width: 100%;
 
+    }
+
+    .inner-intro {
+        height: 130px;
+    }
+}
+
+/* Have questions sec */
+.welcome-block .halp-call {
+    margin-top: 50px;
+}
+
+@media screen and (min-width:1201px) {
+    .welcome-block .halp-call {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .welcome-block .halp-call {
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -350,11 +376,22 @@ input[type=number] {
 /* checkbox */
 .details-nav .modal-dialog .form-check.form-check-inline .form-check-input:checked,
 .form-check-input:checked {
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .form-check-input {
     margin-top: 10px;
+}
+
+.modal-body .gray-form .select-styled {
+    line-height: 39px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
 }
 
 /* Nav-Active on scroll */
@@ -557,20 +594,61 @@ input[type=number] {
 }
 
 /* Tyre new css */
-.tyre-condition-wrap {
-    width: 18%;
-    /* rotate: 90deg; */
+@media screen and (min-width:1200px) {
+    .tyre-condition-wrap {
+        width: 25%;
+        rotate: 270deg;
+        margin-right: 30px;
+        margin-top: -140px;
+        margin-bottom: -90px;
+    }
+
+    .tyre-fl-content,
+    .tyre-fr-content,
+    .tyre-rl-content,
+    .tyre-rr-content,
+    .tyre-sp-content {
+        rotate: 90deg;
+        text-align: center !important;
+    }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width: 766px) and (max-width: 1199px) {
     .tyre-condition-wrap {
+        width: 30%;
+        margin-right: 30px;
+        margin-top: -110px;
+        margin-bottom: -80px;
+        rotate: 270deg;
+    }
+
+    .tyre-fl-content,
+    .tyre-fr-content,
+    .tyre-rl-content,
+    .tyre-rr-content,
+    .tyre-sp-content {
+        rotate: 90deg;
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .tyre-condition-wrap {
+        margin-top: 30px;
         width: 40%;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .tyre-condition-wrap {
+        margin-top: 10px;
+        margin-bottom: 110px;
     }
 }
 
 @media screen and (max-width:576px) {
     .tyre-condition-wrap {
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -598,7 +676,7 @@ input[type=number] {
 
 .tyre-fl,
 .tyre-fr {
-    top: 14%;
+    top: 16%;
 }
 
 .tyre-fl,
@@ -613,12 +691,12 @@ input[type=number] {
 
 .tyre-rl,
 .tyre-rr {
-    bottom: 14%;
+    bottom: 16%;
 }
 
 .tyre-sp {
     width: 30%;
-    bottom: 4%;
+    bottom: 3%;
     left: 35%;
 }
 
@@ -717,6 +795,10 @@ input[type=number] {
 
 
 /* car listing card */
+.feature-car-home .item .car-item {
+    border-color: #151615;
+}
+
 .car-item {
     border-radius: 6px;
     background-color: white;
@@ -806,8 +888,35 @@ input[type=number] {
     font-weight: 600;
 }
 
+.car-item {
+    position: relative;
+}
+
+.con_img .badge-area {
+    max-width: 100px;
+    top: 10px;
+}
+
+.badge-area {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 20%;
+    height: 12px;
+    z-index: 10;
+}
+
+.car-item .price .old-price {
+    display: none;
+}
+
 .car-item .car-content {
     padding: 10px 15px;
+}
+
+.sorting-options,
+.sorting-options .selected-box {
+    padding: 0;
 }
 
 .sorting-options .change-view-button {
@@ -815,7 +924,12 @@ input[type=number] {
 }
 
 .sorting-options-main {
-    padding: 0px 20px;
+    padding: 0px;
+    border-color: transparent;
+}
+
+.sorting-options .shortOpt h6 span {
+    font-weight: 400;
 }
 
 .listing-sidebar {
@@ -832,6 +946,12 @@ input[type=number] {
 
 .filter-btn p {
     color: white;
+}
+
+@media screen and (min-width:768px) {
+    .filter-btn {
+        display: none;
+    }
 }
 
 .list-group .list-group-item ul:nth-child(2) {

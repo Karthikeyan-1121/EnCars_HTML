@@ -163,7 +163,7 @@
   }
 
   .car-details .details-nav ul li a {
-    padding: 10px 8px;
+    padding: 10px 16px;
   }
 
   .car-details .details-nav ul li {
@@ -561,7 +561,8 @@
   } */
 
   .welcome-block .halp-call {
-    margin-top: 30px;
+    margin-top: -25px;
+    margin-bottom: 0;
   }
 
   .car-item .car-list li {
@@ -910,9 +911,9 @@
     width: auto;
   }
 
-  .details-nav ul {
+  /* .details-nav ul {
     text-align: center;
-  }
+  } */
 
   .car-details .details-nav ul li {
     margin-bottom: 0px;

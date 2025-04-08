@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 183.63 70.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #13a320;
+      }
+
+      .cls-2 {
+        fill: #007210;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        stroke-width: 1.27px;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+
+      .cls-8 {
+        fill: #fff;
+        font-family: Impact, Impact;
+        font-size: 37.96px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        stroke-width: .95px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-3">
+    <g>
+      <circle class="cls-2" cx="91.82" cy="35.12" r="35.12" transform="translate(2.06 75.21) rotate(-45)"/>
+      <circle class="cls-6" cx="91.82" cy="35.12" r="33.02" transform="translate(-4.24 14.23) rotate(-8.66)"/>
+      <circle class="cls-5" cx="91.82" cy="35.12" r="31.06" transform="translate(25.46 107.65) rotate(-68.48)"/>
+      <line class="cls-4" x1="91.82" y1="29.38" x2="91.82" y2="9.89"/>
+      <line class="cls-4" x1="63.42" y1="35.12" x2="91.82" y2="35.12"/>
+      <line class="cls-4" x1="88.44" y1="27.41" x2="80.44" y2="9.11"/>
+      <line class="cls-4" x1="87.61" y1="32.4" x2="73.21" y2="23.08"/>
+      <line class="cls-4" x1="120.21" y1="35.12" x2="91.82" y2="35.12"/>
+      <line class="cls-4" x1="95.19" y1="27.41" x2="103.19" y2="9.11"/>
+      <line class="cls-4" x1="96.03" y1="32.4" x2="110.42" y2="23.08"/>
+      <line class="cls-4" x1="63.42" y1="35.12" x2="91.82" y2="35.12"/>
+      <line class="cls-4" x1="87.61" y1="37.85" x2="73.21" y2="47.17"/>
+      <line class="cls-4" x1="96.03" y1="37.85" x2="110.42" y2="47.17"/>
+      <line class="cls-4" x1="95.56" y1="30.76" x2="108.23" y2="15.95"/>
+      <line class="cls-4" x1="88.08" y1="39.49" x2="75.4" y2="54.29"/>
+      <line class="cls-4" x1="88.08" y1="30.76" x2="75.4" y2="15.95"/>
+      <line class="cls-4" x1="95.56" y1="39.49" x2="108.23" y2="54.29"/>
+    </g>
+    <path class="cls-1" d="m91.82,8.33H12.6C5.64,8.33,0,14.32,0,21.7v25.14c0,7.38,5.64,13.37,12.6,13.37h158.43c6.96,0,12.6-5.99,12.6-13.37v-25.14c0-7.38-5.64-13.37-12.6-13.37h-79.22Z"/>
+    <text class="cls-8" transform="translate(16.62 49.29)"><tspan class="cls-9" x="0" y="0">A</tspan><tspan class="cls-10" x="18.44" y="0">V</tspan><tspan x="37.81" y="0">AI</tspan><tspan class="cls-7" x="68.02" y="0">L</tspan><tspan x="83.41" y="0">ABLE</tspan></text>
+  </g>
+</svg>

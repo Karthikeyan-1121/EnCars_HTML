@@ -1,0 +1,201 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.car-color {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    width: 100%;
+}
+
+.car-color input[type="checkbox"] {
+    display: none;
+}
+
+.car-color input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.car-color li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    position: relative;
+}
+
+.colors li input[type="checkbox"]:checked+label:before,
+.car-color li input[type="checkbox"]:checked+label:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+}
+
+.car-color li input[type="checkbox"]:checked+label:before {
+    background: #b9b9b9;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.car-color li input[type="checkbox"]:checked+label:after {
+    color: #e183de;
+    font-weight: normal;
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -11.5px;
+    margin-left: -8.5px;
+    width: 50%;
+    height: 50%;
+    filter: invert(1);
+}
+
+.car-color li label {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e6e8e7;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.car-color li label:hover:after {
+    font-weight: normal;
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    font-size: 13px;
+    margin-top: -11.5px;
+    margin-left: -8.5px;
+    color: #b9b9b9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.car-color li label[for="colorRedMaroon"] {
+    background: url(/images/detail/icons/availability/colors/red-maroon.svg);
+}
+
+.car-color li label[for="colorOrange"] {
+    background: url(/images/detail/icons/availability/colors/orange.svg);
+}
+
+.car-color li label[for="colorYellowGolden"] {
+    background: url(/images/detail/icons/availability/colors/yellow-golden.svg);
+}
+
+.car-color li label[for="colorGreen"] {
+    background: green;
+}
+
+.car-color li label[for="colorBlue"] {
+    background: url(/images/detail/icons/availability/colors/blue.svg);
+}
+
+.car-color li label[for="colorBeigeBronzeBrown"] {
+    background: url(/images/detail/icons/availability/colors/beige-bronze-brown.svg);
+}
+
+.car-color li label[for="colorSilverGray"] {
+    background: url(/images/detail/icons/availability/colors/silver-grey.svg);
+}
+
+.car-color li label[for="colorWhite"] {
+    background: url(/images/detail/icons/availability/colors/white.svg);
+}
+
+.car-color li label[for="colorBlack"] {
+    background: url(/images/detail/icons/availability/colors/black.svg);
+}
+
+.selections {
+    list-style: none;
+    padding: 0 0 0 2em;
+    margin: 0;
+}
+
+.selections li {
+    cursor: pointer;
+    color: #006a77;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selections li input[type="checkbox"] {
+    display: none;
+}
+
+.selections li input[type="checkbox"]:checked+label:after {
+    left: -1.7em;
+    top: .6em;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    font-size: 13px;
+    margin-top: -6.5px;
+    margin-left: -6.5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.selections li input[type="checkbox"]:checked+label:before {
+    background: #b9b9b9;
+}
+
+.selections li label {
+    cursor: pointer;
+    display: inline-block;
+    padding: .5em 0;
+    position: relative;
+}
+
+.selections li label a {
+    color: #006a77;
+    text-decoration: none;
+}
+
+.selections li label:before,
+.selections li label:after {
+    content: '';
+    position: absolute;
+}
+
+.selections li label:before {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    left: -2em;
+    background: #fff;
+}
+
+.selections li label:hover:after {
+    left: -1.7em;
+    top: .6em;
+    color: #b9b9b9;
+    font-weight: normal;
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    font-size: 13px;
+    margin-top: -6.5px;
+    margin-left: -6.5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+
+.car-color li a::after {
+    display: none;
+}

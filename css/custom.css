@@ -421,6 +421,10 @@ input[type=number] {
     margin-top: 5px;
 }
 
+.car-id {
+    color: #1a251eb3 !important;
+}
+
 .product-con_fe .con_tex_item {
     border: 1px solid lightgray;
 }
@@ -881,6 +885,11 @@ input[type=number] {
     .shortOpt {
         margin-bottom: 20px;
     }
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
 }
 
 .car-item .price span {

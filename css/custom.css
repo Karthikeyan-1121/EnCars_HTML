@@ -71,6 +71,10 @@ input[type=number] {
     scale: 1.01;
 }
 
+.details-nav .modal-dialog label {
+    text-transform: none;
+}
+
 
 /* About us icon hover */
 .welcome-block {

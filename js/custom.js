@@ -123,7 +123,7 @@ var POTENZA = {};
  $(".owl-carousel").each(function () {
         var $this = $(this),
             $items = ($this.data('items')) ? $this.data('items') : 1,
-            $loop = ($this.data('loop')) ? $this.data('loop') : true,
+            $loop = ($this.data('loop')) ? $this.data('loop') : false,
             $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
             $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
             $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,

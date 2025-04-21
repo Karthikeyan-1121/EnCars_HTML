@@ -426,7 +426,7 @@ input[type=number] {
 }
 
 .car-id {
-    color:#01762cd4 !important;
+    color: #01762cd4 !important;
 }
 
 .product-con_fe .con_tex_item {
@@ -594,11 +594,6 @@ input[type=number] {
 .img-fit-fw img {
     height: 60px;
     opacity: .8;
-}
-
-.list-style-1 .c-condition-color i,
-.c-condition-color {
-    color: orange;
 }
 
 /* Tyre new css */

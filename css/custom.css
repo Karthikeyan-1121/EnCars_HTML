@@ -802,6 +802,11 @@ input[type=number] {
     border-color: #151615;
 }
 
+.owl-carousel.center-if-few .owl-stage {
+    display: flex;
+    justify-content: center;
+}
+
 .car-item {
     border-radius: 6px;
     background-color: white;
@@ -820,9 +825,9 @@ input[type=number] {
 }
 
 .car-item .car-image {
-    /* height: 120px; */
+    max-height: 125px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
 }
 
